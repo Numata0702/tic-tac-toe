@@ -63,9 +63,7 @@ public class TicTacToe {
 			}
 
 			field[abcNumber][suuzi] = maru_ka_batu_ka(turn);
-
 			maruBatuList[turn % 2][turn / 2] = field_number[abcNumber][suuzi];
-
 			for (int i = 0; i < 2; i++) {
 				for (int j = i + 1; j < 3; j++) {
 					for (int k = j + 1; k < 4; k++) {
@@ -75,9 +73,7 @@ public class TicTacToe {
 							show(field);
 							System.out.println(maru_ka_batu_ka(turn) + "の勝ちです！");
 							break;
-
 						}
-
 					}
 				}
 			}
@@ -90,7 +86,6 @@ public class TicTacToe {
 				win = true;
 			}
 		}
-
 	}
 
 	public static String maru_ka_batu_ka(int turn) {
